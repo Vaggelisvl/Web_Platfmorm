@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/check_login.js"></script>
+		<script src="js/profile_photo.js"></script>
+	</head>
+
+
+	<body>
+		<div id="menu"><a href='index.html'>Home</a> <a href='network.html'>Network</a> <a href='chat.html'>Chat</a> <a href='users.html'>All Users</a> <a id="profile" href='user.html?id=1'>Profile</a> <a id="profile" href='notifications.html'>Notifications</a> <a href='settings.html'>Settings</a> <a href='logout.html'>Logout</a></div>
+	
+	
+	<div id="result">
+		<h3>Update Profile Picture</h3>
+		
+		<!--<form id="form" action="http:localhost:8081/profile_image_upload/0" method="post" enctype="multipart/form-data">-->
+		<input id='file' type="file" name="filetoupload"><br>
+		<!--<input type="submit" value="Upload">-->
+		<button onclick='submit_photo()'>Upload</button>
+		</form>
+		
+	</div>
+	</body>
+</html>

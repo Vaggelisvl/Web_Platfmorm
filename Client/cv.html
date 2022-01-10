@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/check_login.js"></script>
+		<script src="js/cv.js"></script>
+	</head>
+
+
+	<body>
+		<div id="menu"><a href='index.html'>Home</a> <a href='network.html'>Network</a> <a href='chat.html'>Chat</a> <a href='users.html'>All Users</a> <a id="profile" href='user.html?id=1'>Profile</a> <a id="profile" href='notifications.html'>Notifications</a> <a href='settings.html'>Settings</a> <a href='logout.html'>Logout</a></div>
+	
+	
+	<div id="result">
+		<h3>CV information <span id="fullname"></span></h3>
+		<table>
+		
+		<tr><td>Category</td><td><select id='category'>
+			<option selected>Education</option>
+			<option>Work</option>
+			<option>Other</option>
+			</select></td></tr>
+		<tr><td>Title</td><td><input type='text' id='title'></td></tr>
+		<tr><td>Description</td><td><input type='text' id='description'></td></tr>
+		<tr><td>Start</td><td><input type='number' id='year_start' value='2021'></td></tr>
+		<tr><td>End</td><td><input type='number' id='year_end'  value='2021'></td></tr>
+		<tr><td>Public</td><td><input type='checkbox' id='public'></td></tr>
+		<tr><td></td><td><button onclick="submit_cv();">Submit</button></td></tr>
+		
+		</table>
+		
+		
+	</div>
+	</body>
+</html>
